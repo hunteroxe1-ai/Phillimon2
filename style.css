@@ -1,0 +1,111 @@
+:root {
+    --bg: #0b0e14;
+    --card: #1c1f26;
+    --neon-pink: #ff007f;
+    --neon-blue: #00d4ff;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+}
+
+.navbar {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid var(--neon-pink);
+}
+
+.logo { font-size: 26px; font-weight: 900; letter-spacing: 2px; }
+.logo span { color: var(--neon-pink); text-shadow: 0 0 10px var(--neon-pink); }
+.sub-logo { font-size: 12px; color: var(--neon-blue); text-transform: uppercase; }
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(45deg, #1c1f26, #0b0e14);
+}
+
+.container { width: 90%; max-width: 800px; margin: auto; padding-bottom: 40px; }
+
+.section-title {
+    font-size: 18px;
+    margin: 30px 0 15px;
+    color: var(--neon-blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* RADIO STYLE */
+.radio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.radio-card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.radio-card:hover { border-color: var(--neon-pink); transform: scale(1.02); }
+
+.play-btn {
+    display: inline-block;
+    background: var(--neon-pink);
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* MUSIC BUTTONS */
+.music-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.music-btn {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-decoration: none;
+    padding: 25px 10px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* CONTACT */
+.contact-box {
+    margin-top: 40px;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px dashed var(--neon-blue);
+}
+
+.wa-contact {
+    color: #25d366;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer { text-align: center; padding: 20px; color: #555; font-size: 11px; }
